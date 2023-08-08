@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://localhost:44383/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="https://localhost:44383/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://localhost:44383/Service1.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_getObjetosBD_InputMessage">
+    <wsdl:part name="parameters" element="tns:getObjetosBD" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getObjetosBD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getObjetosBDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InfoObjetos_InputMessage">
+    <wsdl:part name="parameters" element="tns:InfoObjetos" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InfoObjetos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InfoObjetosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AgregarObj_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarObj" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AgregarObj_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarObjResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarObj_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarObj" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EliminarObj_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarObjResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ModificarObj_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarObj" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ModificarObj_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarObjResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InfoUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:InfoUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InfoUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InfoUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ValidarReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarReg" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ValidarReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ValidarIS_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarIS" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ValidarIS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarISResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Registrar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Registrar" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Registrar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VerificarCUI_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarCUI" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VerificarCUI_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarCUIResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Sancion_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sancion" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Sancion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SancionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Levantar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Levantar" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Levantar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LevantarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RevisarSanciones_InputMessage">
+    <wsdl:part name="parameters" element="tns:RevisarSanciones" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RevisarSanciones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RevisarSancionesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="getObjetosBD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getObjetosBD" message="tns:IService1_getObjetosBD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getObjetosBDResponse" message="tns:IService1_getObjetosBD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InfoObjetos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InfoObjetos" message="tns:IService1_InfoObjetos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InfoObjetosResponse" message="tns:IService1_InfoObjetos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarObj">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AgregarObj" message="tns:IService1_AgregarObj_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AgregarObjResponse" message="tns:IService1_AgregarObj_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarObj">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EliminarObj" message="tns:IService1_EliminarObj_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EliminarObjResponse" message="tns:IService1_EliminarObj_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarObj">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ModificarObj" message="tns:IService1_ModificarObj_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ModificarObjResponse" message="tns:IService1_ModificarObj_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InfoUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InfoUsuario" message="tns:IService1_InfoUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InfoUsuarioResponse" message="tns:IService1_InfoUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ValidarReg" message="tns:IService1_ValidarReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ValidarRegResponse" message="tns:IService1_ValidarReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarIS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ValidarIS" message="tns:IService1_ValidarIS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ValidarISResponse" message="tns:IService1_ValidarIS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Registrar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Registrar" message="tns:IService1_Registrar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RegistrarResponse" message="tns:IService1_Registrar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificarCUI">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/VerificarCUI" message="tns:IService1_VerificarCUI_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/VerificarCUIResponse" message="tns:IService1_VerificarCUI_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sancion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Sancion" message="tns:IService1_Sancion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SancionResponse" message="tns:IService1_Sancion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Levantar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Levantar" message="tns:IService1_Levantar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LevantarResponse" message="tns:IService1_Levantar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RevisarSanciones">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RevisarSanciones" message="tns:IService1_RevisarSanciones_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RevisarSancionesResponse" message="tns:IService1_RevisarSanciones_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getObjetosBD">
+      <soap:operation soapAction="http://tempuri.org/IService1/getObjetosBD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InfoObjetos">
+      <soap:operation soapAction="http://tempuri.org/IService1/InfoObjetos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarObj">
+      <soap:operation soapAction="http://tempuri.org/IService1/AgregarObj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarObj">
+      <soap:operation soapAction="http://tempuri.org/IService1/EliminarObj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarObj">
+      <soap:operation soapAction="http://tempuri.org/IService1/ModificarObj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InfoUsuario">
+      <soap:operation soapAction="http://tempuri.org/IService1/InfoUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarReg">
+      <soap:operation soapAction="http://tempuri.org/IService1/ValidarReg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarIS">
+      <soap:operation soapAction="http://tempuri.org/IService1/ValidarIS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Registrar">
+      <soap:operation soapAction="http://tempuri.org/IService1/Registrar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarCUI">
+      <soap:operation soapAction="http://tempuri.org/IService1/VerificarCUI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sancion">
+      <soap:operation soapAction="http://tempuri.org/IService1/Sancion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Levantar">
+      <soap:operation soapAction="http://tempuri.org/IService1/Levantar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RevisarSanciones">
+      <soap:operation soapAction="http://tempuri.org/IService1/RevisarSanciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:49323/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
