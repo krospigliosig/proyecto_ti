@@ -1,0 +1,8 @@
+C:\Users\pc\Desktop\Visual Studio\ASP.NET\conexion_basedatos\bin\Debug\conexion_basedatos.exe.config
+C:\Users\pc\Desktop\Visual Studio\ASP.NET\conexion_basedatos\bin\Debug\conexion_basedatos.exe
+C:\Users\pc\Desktop\Visual Studio\ASP.NET\conexion_basedatos\bin\Debug\conexion_basedatos.pdb
+C:\Users\pc\Desktop\Visual Studio\ASP.NET\conexion_basedatos\obj\Debug\conexion_basedatos.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\Visual Studio\ASP.NET\conexion_basedatos\obj\Debug\conexion_basedatos.csproj.SuggestedBindingRedirects.cache
+C:\Users\pc\Desktop\Visual Studio\ASP.NET\conexion_basedatos\obj\Debug\conexion_basedatos.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\Visual Studio\ASP.NET\conexion_basedatos\obj\Debug\conexion_basedatos.exe
+C:\Users\pc\Desktop\Visual Studio\ASP.NET\conexion_basedatos\obj\Debug\conexion_basedatos.pdb
