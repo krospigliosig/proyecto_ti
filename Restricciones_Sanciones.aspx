@@ -6,6 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Restricciones y sanciones</title>
+    <link rel="stylesheet" href="estilo.css"/>
 </head>
 <body>
     <form id="formRes_San" runat="server">
