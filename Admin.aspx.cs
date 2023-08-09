@@ -25,5 +25,10 @@ namespace proyecto_ti
             Session.Abandon();
             Response.Redirect("Pagina_Inicio");
         }
+
+        protected void Ir_Gestionar_Usuarios(object sender, EventArgs e)
+        {
+            Response.Redirect("Gestionar_Usuario");
+        }
     }
 }
