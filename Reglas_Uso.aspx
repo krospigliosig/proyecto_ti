@@ -6,6 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Reglas de uso de los implementos EPCC</title>
+    <link rel="stylesheet" href="estilo.css"/>
 </head>
 <body>
     <form id="formRegUso" runat="server">
