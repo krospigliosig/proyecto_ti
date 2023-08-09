@@ -6,6 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Iniciar sesión como administrador EPCC</title>
+    <link rel="stylesheet" href="estilo.css"/>
 </head>
 <body>
     <form id="formInicioSesionAdmin" runat="server" method="post">
