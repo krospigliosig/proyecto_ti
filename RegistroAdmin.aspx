@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Registro de administrador EPCC</title>
     <script src="Scripts/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="estilo.css"/>
 </head>
 <body>
     <form id="formRegistroAdmin" runat="server" method="post">
