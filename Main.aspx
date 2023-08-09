@@ -6,6 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Escuela de Ciencias de la Computación - Implementos Recreativos y Deportivos </title>
+    <link rel="stylesheet" href="estilo.css"/>
 </head>
 <body>
     <form id="form1" runat="server">
