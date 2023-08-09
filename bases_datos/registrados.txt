@@ -1,0 +1,13 @@
+CREATE TABLE [dbo].[Registrados] (
+    [CUI]             INT           NOT NULL,
+    [Nombres]         NVARCHAR (64) NOT NULL,
+    [Apellidos]       NVARCHAR (64) NOT NULL,
+    [Correo]          NVARCHAR (64) NOT NULL,
+    [Contrasena]      NVARCHAR (12) NOT NULL,
+    [Prestado]        NVARCHAR (32) NULL,
+    [FechaPrestamo]   CHAR (10)     NULL,
+    [FechaDevolucion] CHAR (10)     NULL,
+    [Sancionado]      SMALLDATETIME NULL,
+    PRIMARY KEY CLUSTERED ([CUI] ASC)
+);
+

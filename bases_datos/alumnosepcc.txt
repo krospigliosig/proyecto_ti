@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[AlumnosEPCC] (
+    [CUI]       INT           NOT NULL,
+    [Nombres]   NVARCHAR (64) NOT NULL,
+    [Apellidos] NVARCHAR (64) NOT NULL,
+    [Correo]    NVARCHAR (64) NOT NULL,
+    PRIMARY KEY CLUSTERED ([CUI] ASC)
+);
+

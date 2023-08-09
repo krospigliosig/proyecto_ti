@@ -1,0 +1,10 @@
+CREATE TABLE [dbo].[DataObjetos] (
+    [Id]          INT           IDENTITY (1, 1) NOT NULL,
+    [Objeto]      NVARCHAR (32) NOT NULL,
+    [Deporte]     NVARCHAR (16) NOT NULL,
+    [Cantidad]    INT           NOT NULL,
+    [Observacion] NVARCHAR (32) NULL,
+    [Estado]      BIT           DEFAULT ((1)) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
