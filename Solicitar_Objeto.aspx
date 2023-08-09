@@ -6,6 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Solicitud de Implementos Recreativos y Deportivos EPCC</title>
+    <link rel="stylesheet" href="estilo.css"/>
     <script src="Scripts/jquery-3.4.1.js"></script>
 </head>
 <body onload="impedirSelectedZero();">
