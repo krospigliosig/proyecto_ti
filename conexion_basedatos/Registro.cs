@@ -31,9 +31,9 @@ namespace conexion_basedatos
 
             if (datosEstandarizados.Count == 5)
             {
-                consulta = "insert into Registrados values (";
+                consulta = "insert into Registrados (cui,nombres,apellidos,correo,contrasena) values (";
 
-                consulta += "\'" + datosEstandarizados[0] + "\'" + ",";
+                consulta += datosEstandarizados[0] + ",";
                 consulta += "\'" + datosEstandarizados[1] + "\'" + ",";
                 consulta += "\'" + datosEstandarizados[2] + "\'" + ",";
                 consulta += "\'" + datosEstandarizados[3] + "\'" + ",";
@@ -43,9 +43,9 @@ namespace conexion_basedatos
             }
             else
             {
-                consulta = "insert into RegistradosAdmin values (";
+                consulta = "insert into RegistradosAdmin (cui,nombres,apellidos,correo,contrasena) values (";
 
-                consulta += "\'" + datosEstandarizados[0] + "\'" + ",";
+                consulta += datosEstandarizados[0] + ",";
                 consulta += "\'" + datosEstandarizados[1] + "\'" + ",";
                 consulta += "\'" + datosEstandarizados[2] + "\'" + ",";
                 consulta += "\'" + datosEstandarizados[3] + "\'" + ",";
